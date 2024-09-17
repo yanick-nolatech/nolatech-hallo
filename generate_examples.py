@@ -70,7 +70,7 @@ if __name__ == '__main__':
             output_path = os.path.join(output_dir, f'{source_name}_{driving_name}.mp4')
             if not os.path.exists(output_path):
                 start_time = time.time()
-                # create_animnation(source_file, driving_file, output_path)
+                create_animnation(source_file, driving_file, output_path)
                 elapsed_time = time.time() - start_time
                 exec_time_db.append((source_name, driving_name, elapsed_time))
 
